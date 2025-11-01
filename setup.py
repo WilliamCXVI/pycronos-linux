@@ -22,7 +22,7 @@ class RunInstallCommand(install):
         install.run(self)
 
 setup(
-    name = "pycronos-windows",
+    name = "pycronos-linux",
     version = "0.0.1",
     license = "MIT",
     packages=find_packages(),
