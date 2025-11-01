@@ -1,5 +1,5 @@
-# PyCronos for Windows
-PyPi package for integrating the popular PyCronos data analysis package on Windows 11!
+# PyCronos for Linux
+PyPi package for integrating the popular PyCronos data analysis package on Linux!
 
 ## Build the package
 ```
